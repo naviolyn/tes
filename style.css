@@ -17,6 +17,7 @@ body {
     font-weight: 400;
     color: #F7F7E9;
     letter-spacing: 5px;
+    margin-right: 0;
 }
 
 .newbtn {
@@ -105,13 +106,17 @@ body {
 
 .subjudul {
     font-family: 'Yeseva One', serif;
-    font-size: 3vw;
+    font-size: 40px;
     font-weight: 400;
     letter-spacing: 7px;
     width: fit-content;
     border-bottom: 1px solid #F7F7E9;
     margin-bottom: 5vw;
 }
+
+
+
+
 .sub-container {
     margin-top: 5vw;
     margin-bottom: 10vw;
