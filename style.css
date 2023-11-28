@@ -97,12 +97,35 @@ body {
 
 .judul {
     font-family: 'Yeseva One', serif;
-    font-size: 6vw;
+    font-size: 5rem;
     font-weight: 500;
     color: #F7F7E9;
     letter-spacing: 5px;
     
 }
+
+@media screen and (max-width: 700px) {
+    .judul {
+        font-size: 12vw;
+    }
+
+    .gambar-cover {
+        height: 92vh;
+    }
+    .px-3 {
+        bottom: 40vh; 
+    }
+
+    .kontenabout-container {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .aboutgambar-container {
+        margin-bottom: 5vw;
+    }
+
+
+  }
 
 .subjudul {
     font-family: 'Yeseva One', serif;
@@ -221,6 +244,14 @@ span {
     margin-left: auto;
 }
 
+
+@media screen and (max-width: 500px) {
+    .judulservice {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+  }
 
 
 .offer-card {
