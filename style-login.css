@@ -300,3 +300,9 @@ input {
   -webkit-appearance: none;
   margin: 0;
 }
+
+@media screen and (max-width: 575px){
+  #byk {
+    padding-top: 0!important;
+  }
+}
