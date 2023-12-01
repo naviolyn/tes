@@ -1,7 +1,7 @@
-
-
-/* Please ❤ this if you like it! */
-
+@font-face {
+    font-family: myfont;
+    src: url(against\ regular.ttf);
+}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
 
@@ -23,7 +23,7 @@ a:hover {
 	text-decoration: none;
 }
 .link {
-  color: #c4c3ca;
+  color: #F7F7E9;
 }
 .link:hover {
   color: #ffeba7;
@@ -34,7 +34,8 @@ p {
   line-height: 1.7;
 }
 h4 {
-  font-weight: 600;
+  font-family: 'myfont', serif;
+  font-weight: 300;
 }
 h6 span{
   padding: 0 20px;
@@ -180,7 +181,7 @@ h6 span{
   line-height: 22px;
   letter-spacing: 2px;
   outline: none;
-  color: #c4c3ca;
+  color: #F7F7E9;
   background-color: #161413;
   border: none;
   -webkit-transition: all 200ms linear;
@@ -209,49 +210,57 @@ h6 span{
 
 input {
   font-family: 'Playfair Display', serif;
-  font-style: italic;
+  
 }
 
 .form-group input:-ms-input-placeholder  {
-  color: #c4c3ca;
+  font-style: italic;
+  color: #F7F7E9;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input::-moz-placeholder  {
-  color: #c4c3ca;
+  font-style: italic;
+  color: #F7F7E9;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input:-moz-placeholder  {
-  color: #c4c3ca;
+  font-style: italic;
+  color: #F7F7E9;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input::-webkit-input-placeholder  {
-  color: #c4c3ca;
+  font-style: italic;
+  color: #F7F7E9;
   opacity: 0.7;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input:focus:-ms-input-placeholder  {
+  font-style: italic;
   opacity: 0;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input:focus::-moz-placeholder  {
+  font-style: italic;
   opacity: 0;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input:focus:-moz-placeholder  {
+  font-style: italic;
   opacity: 0;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 .form-group input:focus::-webkit-input-placeholder  {
+  font-style: italic;
   opacity: 0;
   -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -305,4 +314,22 @@ input {
   #byk {
     padding-top: 0!important;
   }
+}
+
+.link:hover {
+  color: #dfb2a3; 
+}
+
+
+
+#card-confir {
+  margin-top: 0;
+  height: 350px;
+  top: 0;
+}
+.subconfir {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute; padding: 35px;
 }

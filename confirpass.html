@@ -21,14 +21,6 @@
 
     <!--Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
-
-    <style>
-        #card-forgot {
-            margin-top: 0;
-            height: 350px;
-            top: 0;
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar-dark navbar navbar-expand-lg newnav sticky-top ">
@@ -63,24 +55,30 @@
         </div>
       </nav>
 
-	<div class="sub-container">
+	<div class="sub-container-login">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-12 text-center align-self-center">
 					<div class="section pb-5 pt-sm-2 text-center">
 						<div class="card-3d-wrap mx-auto">
-							<div class="card-3d-wrapper"  id="card-forgot" >
-								<div class="card-front">
-									<div class="center-top mt-4">
-										<div class="section text-center">
+							<div class="card-3d-wrapper"  id="card-confir" >
+								<div class="card-front" style="position: relative;">
+									<div class="">
+										<div class="subconfir section text-center"">
 											<h4 class="mb-4 pb-3">Reset Password</h4>
                       <form action="">
-                        <div class="form-group">
-                          <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>
-                          <i class="input-icon"><span class="material-symbols-outlined">
-                            alternate_email
-                            </span></i>
-                        </div>
+                        <div class="form-group mt-2">
+                            <input type="password" name="newpass" class="form-style" placeholder="New Password" id="logpass" autocomplete="off" required>
+                            <i class="input-icon"><span class="material-symbols-outlined">
+                              lock
+                              </span></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="password" name="confirmpass" class="form-style" placeholder="Confirm Password" id="logpass" autocomplete="off" required>
+                            <i class="input-icon"><span class="material-symbols-outlined">
+                              lock
+                              </span></i>
+                          </div>
                         <a href="#" class="btn mt-4">submit</a>
                       </form>						
 			      				</div>
