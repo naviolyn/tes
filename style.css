@@ -4,6 +4,11 @@ body {
     background-color: #1A1716;
     scroll-behavior: smooth;
 }
+.navbar-toggler:focus{
+    color: #f7f7e969;
+}
+
+
 .newnav {
     padding-right: 5vw;
     padding-left: 5vw;
@@ -310,4 +315,32 @@ span {
     background-color: #2e2922;
     padding-top: 6vw;
     padding-bottom: 4vw;
+}
+
+
+.seemoreoffers {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: #F7F7E9;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+
+/*PRICING*/
+.subjudulpricing {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: #F7F7E9;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    
 }
