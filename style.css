@@ -4,6 +4,10 @@ body {
     background-color: #1A1716;
     scroll-behavior: smooth;
 }
+a {
+    text-decoration: none;
+    color: #F7F7E9;
+}
 
 @font-face {
     font-family: myfont;
@@ -20,13 +24,13 @@ body {
 .newnav {
     padding-right: 5vw;
     padding-left: 5vw;
-    background-color: #1a1716e0;
+    background-color: #1a1716;
     border-bottom: #F7F7E9 1px solid;
 }
 
 .navbar-brand {
     font-family: 'myfont', serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
     color: #F7F7E9;
     letter-spacing: 5px;
@@ -36,20 +40,35 @@ body {
 .newbtn {
     letter-spacing: 2px;
     font-size: 18px;
-    background-color: #c29503;
+    background-color: #99310e;
     border: 0px;
     color: #F7F7E9;
     border-radius: 5px;
+    transition: transform .2s;
 }
+
+@media screen and (max-width: 991px) {
+    #btn-register {
+        margin-top: 10px;
+    }
+}
+
+#btnsee {
+    color: #ffffffd8;
+    background-color: #1a17166b;
+    border: 1px solid #bb3d1336;
+}
+
 
 .btn:active,
 .btn:focus{  
-  background-color: #5a200d;;
-  color: #ffeba7;
+  background-color: #a56214;;
+  color: #fff8e1;
 }
 .btn:hover{  
-  background-color: #5a200d;
-  color: #ffeba7;
+  background-color: #a56214;
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 
@@ -122,7 +141,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-style: italic;
     letter-spacing: 2px;
-    color: #d6d6cb;
+    color: #d6d6cbc5;
 }
 
 .teksjudul-container {
@@ -169,38 +188,30 @@ body {
 
 .subjudul {
     font-family: 'myfont', serif;
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 400;
     letter-spacing: 7px;
     width: fit-content;
-    border-bottom: 1px solid #F7F7E9;
-    margin-bottom: 5vw;
+    margin-bottom: 3.5vw;
 }
 
 
 
 
 .sub-container {
-    margin-top: 5vw;
-    margin-bottom: 10vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-top: 8vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 8vw;
     
 }
 
-.subabout-container, .suboffers-container{
-    padding-left: 16px;
-    padding-right: 16px;
-    
+#mainoffers .col1 { 
+    margin-left: 0px!important;
 }
 
-
-.sub-container-service {
-    margin-top: 5vw;
-    margin-bottom: 10vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    
+.subabout-container {
+    padding-top: 0!important;
 }
 
 span {
@@ -208,6 +219,7 @@ span {
 }
 
 .kontenabout {
+    overflow-wrap: normal;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
@@ -219,14 +231,20 @@ span {
 }
 
 .aboutgambar-container {
+    position: relative;
     width: 80%;
-    margin-left: 10vw;
+    overflow: hidden;
+    margin-left: 5vw;
 }
 
 .gambarabout {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     width: 100%;
     object-fit: cover;
-    margin-top: 2vw;
+    overflow-wrap: normal;
 }
 
 .footer-container {
@@ -292,21 +310,27 @@ span {
         margin-right: 30px;
     }
     
-  }
-
+}
 
 .offer-card {
     background-color: #50473b;
     color: #F7F7E9;
-    
+}
+
+.bawahoffer {
+    font-family: 'Playfair Display'; 
+    margin-bottom: 0!important; 
+    color: #d8b98ab9;
 }
 
 .pricing-card-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'myfont', serif;
+    letter-spacing: 2px;
+    font-size: 36px;
 }
 
 .card-header {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', serif;
     letter-spacing: 2px;
 }
 
@@ -316,20 +340,30 @@ span {
     border-top: #dbd9d5 solid 2px;
     border-bottom: #dbd9d5 solid 2px;
     border-radius: 0;
-}
+    transition: transform 0.5s;
+  }
 
 .newbtn-offer:active,
 .newbtn-offer:focus{  
-  background-color: #382d2900;;
+    background-color: #50473b!important;
+    border-top: #c29503 solid 2px !important;
+    border-bottom: #c29503 solid 2px !important;
+    border-right: #c29503 solid 2px !important;
+    border-left: #c29503 solid 2px !important;
+    
 }
-.newbtn-offer:hover{  
-  background-color: #c54c2300;
-  color: #ffeba7;
+.newbtn-offer:hover{
+    animation-name: slidein;
+    background-color: #50473b;
+    border-top: #dbd9d5 solid 2px;
+    border-bottom: #dbd9d5 solid 2px;
+    transform: scale(1.05)!important;
 }
 
 .choose-card-title{
     font-family: 'Playfair Display', serif;
     font-size: 40px;
+    color: #99310e;
 }
 
 .choose-card-text {
@@ -346,8 +380,14 @@ span {
 .choose-card {
     margin-right: 16px;
     margin-left: 16px;
-    background-color: #fdf2bf;
+    background-color: #f0e8c9;
+    transition: transform .2s;
+    
 }
+.choose-card:hover {
+    transform: scale(1.05);
+  }
+
 
 .quote {
     font-family: 'Playfair Display', serif;
@@ -358,23 +398,34 @@ span {
 
 .sub-container-choose {
     background-color: #2e2922;
-    padding-top: 6vw;
-    padding-bottom: 4vw;
 }
 
-
 .seemoreoffers {
+    text-align: center;
+    margin: auto;
+}
+
+/* .seemoreoffers {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     color: #F7F7E9;
     font-size: 24px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    font-style: italic;
+    transition: all 0.8s;
+} */
+
+.seemoreservice {
+    transition: all 0.5s;
+}
+.seemoreservice:hover {
+    padding-right: 10px;
 }
 
-
+.seemoreservice:hover a:after {
+    content: '\00bb';
+}
 
 /*PRICING*/
 .subjudulpricing {
